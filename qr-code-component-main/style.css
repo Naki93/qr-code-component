@@ -7,7 +7,7 @@
 
 .attribution { 
     padding-top: 15px;
-    font-size: 11px; text-align: center;
+    font-size: 1.1rem; text-align: center;
  }
 
 .attribution a {
@@ -15,26 +15,27 @@
 }
 
 body{
-    background-color: hsl(212, 45%, 89%) ;
+    background-color: hsl(212, 45%, 89%);
+    text-align: center;
+    /* so that content does not cut off if it grows beneath the viewport */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 
 .container{
     background-color:  hsl(212, 45%, 89%);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    width: 300px;
-    height: 467px;
+    max-width: 20rem;
     background-color: white;
     padding: 22px;
     border-radius: 20px;
@@ -42,14 +43,15 @@ body{
 }
 
 img{
-    height: auto;
-    width: 100%;
+    
+    display: block;
+    max-width: 100%;
     border-radius: 8px;
 }
 
 .card-details{
     margin: 8 8px 8px 8px;
-    text-align: center;
+    
 }
 
 p{
@@ -57,7 +59,7 @@ p{
     font-family: 400;
     padding: 24px 5px 0 5px;
     color: hsl(220, 15%, 55%);
-    font-size: 0.9em;
+    font-size: 0.9rem;
     
     
 }
@@ -67,10 +69,10 @@ h2{
     font-weight: 700;
     padding-top: 20px;
     color:  hsl(218, 44%, 22%);
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     .card{
         width: 90%;
         padding: 15px;
@@ -78,13 +80,13 @@ h2{
     }
 
     h2{
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     p{
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
-}
+} */
 
 
 
